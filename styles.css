@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}   
+/* Стили для Задания 1 */
+.task1,.task2,.task3{
+    text-align: center;
+}
+.main,.main2{
+    margin: 10px 0 0;
+}
+.main-li,.main-li2,.main-li3{
+    background: #ddcece;
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+    line-height: 50px;
+}
+.main-li>a{
+    color: #000000;
+}
+.link,.link2{
+    display: block;
+}
+.main-li:hover{
+    background: #ff0000;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    transition: 1000ms;
+    border-radius: 15px;
+    font-size: 50px;
+}
+.link:hover{
+    color:#ffffff;
+}
+/* Конец */
+
+/* Стили для Задания 2 */
+.task2{
+    margin: 25px 0 0 0;
+}
+.main-li2>a{
+    color: #000000;
+}
+.main-li2:nth-child(1){
+background-color: #88292F;
+}
+.main-li2:nth-child(3){
+background-color: #5DB7DE;
+}
+.main-li2:nth-child(5){
+background-color: #0D5D56;
+}
+.main-li2:nth-child(7){
+background-color: #88292F;
+}
+.main-li2:nth-child(9){
+background-color: #5DB7DE;
+}
+.link2:nth-child(1,3,5,7,9){
+    color: #0E1116;
+}
+.main-li3>a{
+    color: #000000;
+}
+.link3::before{
+content: "\2192";
+}
