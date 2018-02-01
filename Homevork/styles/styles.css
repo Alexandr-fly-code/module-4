@@ -2,4 +2,125 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
+}
+h2{
+    text-transform: uppercase;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+.wrapper{
+    margin:auto;
+    width: 1024px;
+    height: 1500px;
+    background-image: url("../img//content-bg.jpg"); 
+    padding: 100px 70px 100px 76px;
+}
+.fon{
+    background-image: url("../img/page-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    padding: 45px 0 65px; 
+}
+.clearfix::after{
+clear: both;
+}
+.block-left{
+    width: 630px;
+    display: inline-block;
+    /* border: 3px solid red; */
+}
+.block-right{
+    display: inline-block;
+    width: 206px;
+    float: right;
+    margin: 0 -30px 0 0;
+    /* border: 3px solid red; */
+    counter-reset: counter;
+}
+.paragraph-one{
+   margin: 0 0 50px 0; 
+}
+.paragraph-two{
+    margin: 0 0 70px 0;
+}
+.fleft{
+    float: left;
+    margin: 0 25px 25px 0;
+}
+.paragraph,.list{
+    margin: 0 0 14px 0;
+}
+.font-w,.list{
+    font-weight: 600;
+}
+.list-text{
+    margin: 0 0 35px 20px;    
+}
+/* Счётчик */
+.list{
+    counter-increment: counter;
+}
+.list::before{
+    content: counter(counter);
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background-color: #38afe5;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 26px;
+    margin: 5px 14px 0 0;
+    float: left;
+}
+.list{
+    margin-left: -20px;
+}
+
+
+.block-left1{
+    width: 630px;
+    /* border: 3px solid red; */
+    float: left;
+}
+.block-right2{
+    width: 220px;
+    /* border: 3px solid red; */
+    float: right;
+    margin: 0 -50px 0 0;
+}
+.margin{
+    margin: 115px 0 0 0;
+}
+.view1,.view2{
+    display: inline-block;
+    vertical-align: top;
+}
+.parag{
+    margin: 0 0 30px 0; 
+    
+}
+.weight{
+    font-weight: 600;
+}
+.view1{
+    margin: 0 43px 0 10px;
+}
+.arrow{
+    margin: 25px 0 0 0;
+}
+.arrow::before{
+    content: "\2192";
+}
+
+.before::before{
+content: "\201C";
+}
+.after::after{
+content: "\201D";
+}
+.name{
+    text-align: center;
+    margin: 30px 0 20px 0; 
+    width: 220px;
 }
