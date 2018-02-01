@@ -18,13 +18,6 @@
     display: inline-block;
     line-height: 50px;
 }
-.main-li4{
-    background: #ddcece;
-    width: 100px;
-    height: 50px;
-    line-height: 50px;
-    margin: 0 0 5px 0;
-}
 .main-li>a{
     color: #000000;
 }
@@ -77,17 +70,23 @@ background-color: #5DB7DE;
 content: "\2192";
 }
 
-.task4{
+.main4{
     counter-reset: counter;
 }
 .main-li4{
     counter-increment: counter;
+    width: 140px;
+    /* background: #ddcece; */
+    margin: 0 0 5px 0;
+    line-height: 50px;    
 }
 /* Настройки блока */
 .main-li4::before{
+    border-radius: 100px;
     content: counter(counter);
-    width:100px;
-    height: 10  0px;
+    display: inline-block;
+    width:50px;
     background: rgb(12, 247, 110);  
-    display: block;  
+    vertical-align: top;
+    margin: 0 20px 0 0;
 }
